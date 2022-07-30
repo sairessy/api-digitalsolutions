@@ -14,6 +14,11 @@ const db = {
   musicSpot: {
     musics: new Datastore("./src/database/collections/music-spot/musics.db"),
   },
+
+  w: {
+    users: new Datastore("./src/database/collections/w/users.db"),
+    posts: new Datastore("./src/database/collections/w/posts.db"),
+  },
 };
 
 db.users.loadDatabase();
@@ -22,4 +27,6 @@ db.stock.stock.loadDatabase();
 db.stock.sell.loadDatabase();
 db.musicSpot.musics.loadDatabase();
 
+db.w.users.loadDatabase();
+db.w.posts.loadDatabase();
 export default db;

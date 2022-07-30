@@ -65,3 +65,10 @@ export const searchMusics = (req, res) => {
     res.json(docs);
   });
 };
+
+export const getUserMusics = (req, res) => {
+  const user = req.params.user;
+  db.musicSpot.musics.find({ user }, (err, data) => {
+    res.json(data);
+  });
+};

@@ -12,16 +12,16 @@
 {"todoDescriprion":"Fazer aquilo","user":"1657339397774","done":false,"removed":true,"createdAt":{"$$date":1657350447343},"_id":"M4Inx65K9gCeMzeE"}
 {"todoDescriprion":"","user":"1657339397774","done":false,"removed":true,"createdAt":{"$$date":1657919534026},"_id":"O23SuuaZPhPaMGIn"}
 {"todoDescriprion":"Terminar a secção de POS em Stock e vendas","user":"1657339397774","done":false,"removed":true,"createdAt":{"$$date":1657804000229},"_id":"OkbI1Bzgfx3vHLNY"}
-{"todoDescriprion":"Dar a opção de pesquisar em seleccionar producto","user":"1657339397774","done":false,"removed":false,"createdAt":{"$$date":1657894219302},"_id":"PjWHEwGYUN7zMPDC"}
+{"todoDescriprion":"Dar a opção de pesquisar em seleccionar producto","user":"1657339397774","done":true,"removed":false,"createdAt":{"$$date":1657894219302},"_id":"PjWHEwGYUN7zMPDC"}
 {"todoDescriprion":"Criar um robô para automação","user":"1657339397774","done":true,"removed":true,"createdAt":{"$$date":1657350362568},"_id":"QXkTfBCQxeXnKhhu"}
 {"todoDescriprion":"Editar a quantidade do producto no carinho!","user":"1657339397774","done":true,"removed":true,"createdAt":{"$$date":1657880078583},"_id":"Rgq7pkJLi2P63eVp"}
-{"todoDescriprion":"Ver um vídeo sobre nodemailer no youtube","user":"1657339397774","done":false,"removed":false,"createdAt":{"$$date":1657920712991},"_id":"amEDLQdUhgeSJ6yU"}
+{"todoDescriprion":"Ver um vídeo sobre nodemailer no youtube","user":"1657339397774","done":true,"removed":true,"createdAt":{"$$date":1657920712991},"_id":"amEDLQdUhgeSJ6yU"}
 {"todoDescriprion":"Excel import","user":"1657339397774","done":false,"removed":true,"createdAt":{"$$date":1657441858545},"_id":"cHokS2zItv4V3H1R"}
 {"todoDescriprion":"Dormir um pouco","user":"1657339397774","done":true,"removed":true,"createdAt":{"$$date":1657657335607},"_id":"etRmrgUi3wxZ6inx"}
 {"todoDescriprion":"Melhorar o trabalho","user":"1657339397774","done":true,"removed":true,"createdAt":{"$$date":1657375487963},"_id":"ia97OXnHthjP8idH"}
-{"todoDescriprion":"Criar uma aplicação web para o MusicSpot e construir o Apk (GoNative)","user":"1657339397774","done":false,"removed":false,"createdAt":{"$$date":1657920785802},"_id":"pbLNpnnz3JKPtz6j"}
+{"todoDescriprion":"Criar uma aplicação web para o MusicSpot e construir o Apk (GoNative)","user":"1657339397774","done":false,"removed":true,"createdAt":{"$$date":1657920785802},"_id":"pbLNpnnz3JKPtz6j"}
 {"todoDescriprion":"Estudadr estratégias de venda de software","user":"1657339397774","done":true,"removed":true,"createdAt":{"$$date":1657350336386},"_id":"qmTK1FmwlWoInnYl"}
-{"todoDescriprion":"Fazer upload de músicas para o firebase","user":"1657339397774","done":false,"removed":false,"createdAt":{"$$date":1657921094904},"_id":"rKrzFgwmuLC29BcN"}
+{"todoDescriprion":"Fazer upload de músicas para o firebase","user":"1657339397774","done":false,"removed":true,"createdAt":{"$$date":1657921094904},"_id":"rKrzFgwmuLC29BcN"}
 {"todoDescriprion":"Instalar sass para personalizar o bootstrap","user":"1657339397774","done":false,"removed":true,"createdAt":{"$$date":1657919533792},"_id":"tiwLG7t6xgV6La8I"}
 {"todoDescriprion":"Permitir editar e deletar producto do stock","user":"1657339397774","done":false,"removed":false,"createdAt":{"$$date":1657889329584},"_id":"yJ8snc4ky0RZZfFI"}
-{"todoDescriprion":"Start broadcast","user":"1657339397774","done":false,"removed":false,"createdAt":{"$$date":1657894869567},"_id":"yaxIlBoz9hwhj6qu"}
+{"todoDescriprion":"Start broadcast","user":"1657339397774","done":false,"removed":true,"createdAt":{"$$date":1657894869567},"_id":"yaxIlBoz9hwhj6qu"}

@@ -1,7 +1,6 @@
 import db from "../../database/index.js";
 
 export const createStock = (req, res) => {
-  console.log(req.body);
   db.stock.stock.insert(
     {
       ...req.body,
@@ -14,12 +13,39 @@ export const createStock = (req, res) => {
   );
 };
 
-export const getStock = (req, res) => {
+export const getAllStock = (req, res) => {
   const user = req.params.id;
-  const limit = req.params.limit;
+  db.stock.stock.find({ user, removed: false }, (err, docs) => {
+    res.json(docs);
+  });
+};
+
+export const editStock = (req, res) => {
+  const { name, price, _id } = req.body;
+  db.stock.stock.update(
+    { _id },
+    { $set: { name, price } },
+    (err, numReplaced) => {
+      res.json({ sucess: numReplaced > 0 });
+    }
+  );
+};
+
+export const getStock = (req, res) => {
+  const { user, rowsPerPage, currentPage } = req.body;
+
   db.stock.stock.find({ user, removed: false }).exec((err, docs) => {
     db.stock.stock.count({ user, removed: false }, (err, num) => {
-      res.json({ docs, total: num });
+      let count = 0;
+      const finalData = [];
+      for (let i = parseInt(currentPage) - 1; i < docs.length; i++) {
+        const doc = docs[i];
+        if (count < rowsPerPage) {
+          finalData.push(doc);
+        }
+        count++;
+      }
+      res.json({ docs: finalData, total: num });
     });
   });
 };
@@ -58,5 +84,22 @@ export const searchProduct = (req, res) => {
       docs: docs.filter((o) => o.name.toLowerCase().includes(text)),
       total: 0,
     });
+  });
+};
+
+export const deleteStock = (req, res) => {
+  const _id = req.params.id;
+  db.stock.stock.update(
+    { _id },
+    { $set: { removed: true } },
+    (err, numReplaced) => {
+      res.json({ sucess: numReplaced > 0 });
+    }
+  );
+};
+
+export const getProduct = (req, res) => {
+  db.stock.stock.findOne({ _id: req.params.id }, (err, doc) => {
+    res.json(doc);
   });
 };
