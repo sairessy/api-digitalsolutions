@@ -24,6 +24,8 @@ import {
   getProduct,
   editStock,
   getAllStock,
+  getSellsPerMounth,
+  getQrCode,
 } from "../Controller/stock/StockController.js";
 import {
   createMusic,
@@ -85,5 +87,9 @@ app.get("/user/:id", w_getUser);
 
 app.post("/w/post/create", w_createPost);
 app.get("/w/posts/user/:id", w_getUserPosts);
+
+app.get("/stock/sells_per_month/:year", getSellsPerMounth);
+
+app.get("/qrcode/:code", getQrCode);
 
 export default app;

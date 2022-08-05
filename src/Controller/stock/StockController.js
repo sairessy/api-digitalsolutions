@@ -1,4 +1,5 @@
 import db from "../../database/index.js";
+import QRCode from "qrcode";
 
 export const createStock = (req, res) => {
   db.stock.stock.insert(
@@ -101,5 +102,39 @@ export const deleteStock = (req, res) => {
 export const getProduct = (req, res) => {
   db.stock.stock.findOne({ _id: req.params.id }, (err, doc) => {
     res.json(doc);
+  });
+};
+
+export const getSellsPerMounth = async (req, res) => {
+  const year = req.params.year;
+
+  db.stock.sell.find({}, (err, doc) => {
+    const arr = [];
+
+    for (let i = 0; i < 12; i++) {
+      let tt = 0;
+      const month = i;
+      const aux = doc.filter(
+        (d) =>
+          new Date(d.createdAt).getMonth() === month &&
+          new Date(d.createdAt).getFullYear() === parseInt(year)
+      );
+      for (const e of aux) {
+        tt += e.total;
+      }
+      arr.push({ month, tt });
+    }
+
+    res.json(arr);
+  });
+};
+
+export const getQrCode = async (req, res) => {
+  const code = req.params.code;
+  QRCode.toDataURL(code).then((url) => {
+    res.send(`
+      <body style='display: flex; align-items: center; justify-content: center;'>
+        <img src='${url}'>
+      </body>`);
   });
 };
