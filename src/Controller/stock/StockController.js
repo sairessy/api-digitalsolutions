@@ -138,3 +138,36 @@ export const getQrCode = async (req, res) => {
       </body>`);
   });
 };
+
+export const getVendasPorProducto = (request, response) => {
+  db.stock.sell.find({}, async (err, sells) => {
+    const finalData = [];
+    for (let i = 0; i < sells.length; i++) {
+      const sell = sells[i];
+      for (let j = 0; j < sell.data.length; j++) {
+        const cart = sell.data[j];
+        finalData.push(cart);
+      }
+    }
+
+    const result = [];
+    finalData.reduce((res, value) => {
+      if (!res[value.id]) {
+        res[value.id] = { id: value.id, quantity: 0 };
+        result.push(res[value.id]);
+      }
+      res[value.id].quantity += value.quantity;
+      return res;
+    });
+
+    for (let i = 0; i < result.length; i++) {
+      result[i].name = await new Promise((resolve) => {
+        db.stock.stock.findOne({ _id: result[i].id }, (err, p) => {
+          resolve(p.name);
+        });
+      });
+    }
+
+    response.json(result);
+  });
+};

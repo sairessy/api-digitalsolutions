@@ -26,6 +26,7 @@ import {
   getAllStock,
   getSellsPerMounth,
   getQrCode,
+  getVendasPorProducto,
 } from "../Controller/stock/StockController.js";
 import {
   createMusic,
@@ -72,6 +73,9 @@ app.get("/stock/user/:id", getAllStock);
 app.post("/stock/sell", sellStock);
 app.post("/stock/delete/:id", deleteStock);
 app.get("/stock/sell/total/user/:id", getTotal);
+app.get("/stock/sells_per_month/:year", getSellsPerMounth);
+app.get("/qrcode/:code", getQrCode);
+app.get("/stock-vendas-por-producto", getVendasPorProducto);
 
 // MusicSpot
 app.post("/music_spot/music/create", createMusic);
@@ -84,12 +88,7 @@ app.post("/w/user/login", w_login);
 app.post("/w/user/update", w_updateUser);
 app.post("/w/user/create", w_createUser);
 app.get("/user/:id", w_getUser);
-
 app.post("/w/post/create", w_createPost);
 app.get("/w/posts/user/:id", w_getUserPosts);
-
-app.get("/stock/sells_per_month/:year", getSellsPerMounth);
-
-app.get("/qrcode/:code", getQrCode);
 
 export default app;
