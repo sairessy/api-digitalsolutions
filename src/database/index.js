@@ -19,6 +19,13 @@ const db = {
     users: new Datastore("./src/database/collections/w/users.db"),
     posts: new Datastore("./src/database/collections/w/posts.db"),
   },
+
+  // cardapio
+  cardapio: {
+    users: new Datastore("./src/database/collections/cardapio/users.db"),
+    products: new Datastore("./src/database/collections/cardapio/products.db"),
+    pedidos: new Datastore("./src/database/collections/cardapio/pedidos.db"),
+  },
 };
 
 db.users.loadDatabase();
@@ -29,4 +36,9 @@ db.musicSpot.musics.loadDatabase();
 
 db.w.users.loadDatabase();
 db.w.posts.loadDatabase();
+
+// cardapio
+db.cardapio.users.loadDatabase();
+db.cardapio.products.loadDatabase();
+db.cardapio.pedidos.loadDatabase();
 export default db;

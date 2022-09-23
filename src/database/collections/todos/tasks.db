@@ -4,15 +4,16 @@
 {"todoDescriprion":"Fazer isto","user":"1657339397774","done":true,"removed":true,"createdAt":{"$$date":1657350439995},"_id":"7qe10x9ohy8RNzsV"}
 {"todoDescriprion":"Permitir ao POS salvar ventas e não aceitar duplicatas","user":"1657339397774","done":true,"removed":true,"createdAt":{"$$date":1657879605040},"_id":"AzCmCDY4NrlegKFe"}
 {"todoDescriprion":"Começar e terminar a aba perfil","user":"1657339397774","done":true,"removed":true,"createdAt":{"$$date":1657879638025},"_id":"CctQt7GHeFkM1b8I"}
-{"todoDescriprion":"Make responsive","user":"1657339397774","done":false,"removed":false,"createdAt":{"$$date":1657897381945},"_id":"HYpyjhPLFdsce8VA"}
-{"todoDescriprion":"Graficar vendas diárias, semanais, mensais e anuais.","user":"1657339397774","done":false,"removed":false,"createdAt":{"$$date":1657894154696},"_id":"I3YLDdbeCXPBhGef"}
+{"todoDescriprion":"Make responsive","user":"1657339397774","done":false,"removed":true,"createdAt":{"$$date":1657897381945},"_id":"HYpyjhPLFdsce8VA"}
+{"todoDescriprion":"Graficar vendas diárias, semanais, mensais e anuais.","user":"1657339397774","done":true,"removed":false,"createdAt":{"$$date":1657894154696},"_id":"I3YLDdbeCXPBhGef"}
 {"todoDescriprion":"Organizar a casa","user":"1657339397774","done":true,"removed":true,"createdAt":{"$$date":1657350388638},"_id":"IEVLalmZkp7Up7Cv"}
 {"todoDescriprion":"Lavar a roupa","user":"1657339397774","done":false,"removed":true,"createdAt":{"$$date":1657348596542},"_id":"JUwr5h2HFdLfa7pG"}
 {"todoDescriprion":"Comprar uma casa com grama para ter o que cortar","user":"1657339397774","done":false,"removed":true,"createdAt":{"$$date":1657349082584},"_id":"Jy8dLjYeKzok2QwU"}
 {"todoDescriprion":"Fazer aquilo","user":"1657339397774","done":false,"removed":true,"createdAt":{"$$date":1657350447343},"_id":"M4Inx65K9gCeMzeE"}
 {"todoDescriprion":"","user":"1657339397774","done":false,"removed":true,"createdAt":{"$$date":1657919534026},"_id":"O23SuuaZPhPaMGIn"}
+{"todoDescriprion":"jkljk","user":"1657339397774","done":false,"removed":true,"createdAt":{"$$date":1660426843703},"_id":"OViLEdr1DJIFOeXn"}
 {"todoDescriprion":"Terminar a secção de POS em Stock e vendas","user":"1657339397774","done":false,"removed":true,"createdAt":{"$$date":1657804000229},"_id":"OkbI1Bzgfx3vHLNY"}
-{"todoDescriprion":"Dar a opção de pesquisar em seleccionar producto","user":"1657339397774","done":true,"removed":false,"createdAt":{"$$date":1657894219302},"_id":"PjWHEwGYUN7zMPDC"}
+{"todoDescriprion":"Dar a opção de pesquisar em seleccionar producto","user":"1657339397774","done":true,"removed":true,"createdAt":{"$$date":1657894219302},"_id":"PjWHEwGYUN7zMPDC"}
 {"todoDescriprion":"Criar um robô para automação","user":"1657339397774","done":true,"removed":true,"createdAt":{"$$date":1657350362568},"_id":"QXkTfBCQxeXnKhhu"}
 {"todoDescriprion":"Editar a quantidade do producto no carinho!","user":"1657339397774","done":true,"removed":true,"createdAt":{"$$date":1657880078583},"_id":"Rgq7pkJLi2P63eVp"}
 {"todoDescriprion":"Ver um vídeo sobre nodemailer no youtube","user":"1657339397774","done":true,"removed":true,"createdAt":{"$$date":1657920712991},"_id":"amEDLQdUhgeSJ6yU"}
@@ -23,5 +24,5 @@
 {"todoDescriprion":"Estudadr estratégias de venda de software","user":"1657339397774","done":true,"removed":true,"createdAt":{"$$date":1657350336386},"_id":"qmTK1FmwlWoInnYl"}
 {"todoDescriprion":"Fazer upload de músicas para o firebase","user":"1657339397774","done":false,"removed":true,"createdAt":{"$$date":1657921094904},"_id":"rKrzFgwmuLC29BcN"}
 {"todoDescriprion":"Instalar sass para personalizar o bootstrap","user":"1657339397774","done":false,"removed":true,"createdAt":{"$$date":1657919533792},"_id":"tiwLG7t6xgV6La8I"}
-{"todoDescriprion":"Permitir editar e deletar producto do stock","user":"1657339397774","done":false,"removed":false,"createdAt":{"$$date":1657889329584},"_id":"yJ8snc4ky0RZZfFI"}
+{"todoDescriprion":"Permitir editar e deletar producto do stock","user":"1657339397774","done":true,"removed":false,"createdAt":{"$$date":1657889329584},"_id":"yJ8snc4ky0RZZfFI"}
 {"todoDescriprion":"Start broadcast","user":"1657339397774","done":false,"removed":true,"createdAt":{"$$date":1657894869567},"_id":"yaxIlBoz9hwhj6qu"}

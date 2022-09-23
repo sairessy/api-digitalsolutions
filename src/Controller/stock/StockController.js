@@ -107,8 +107,9 @@ export const getProduct = (req, res) => {
 
 export const getSellsPerMounth = async (req, res) => {
   const year = req.params.year;
+  const user = req.params.user;
 
-  db.stock.sell.find({}, (err, doc) => {
+  db.stock.sell.find({ user }, (err, doc) => {
     const arr = [];
 
     for (let i = 0; i < 12; i++) {
@@ -140,7 +141,9 @@ export const getQrCode = async (req, res) => {
 };
 
 export const getVendasPorProducto = (request, response) => {
-  db.stock.sell.find({}, async (err, sells) => {
+  const user = request.params.user;
+
+  db.stock.sell.find({ user }, async (err, sells) => {
     const finalData = [];
     for (let i = 0; i < sells.length; i++) {
       const sell = sells[i];

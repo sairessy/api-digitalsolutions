@@ -36,7 +36,6 @@ export const createMusic = (req, res) => {
               console.log("Erro ao inserir na DB", err);
               return res.status(400).json({});
             } else {
-              console.log(doc);
               return res.status(200).json(doc);
             }
           }

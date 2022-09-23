@@ -9,12 +9,17 @@ export const createUser = (req, res) => {
     lastModified: Date.now(),
   };
 
-  db.users.insert(data, (err, doc) => {
-    if (err) {
-      throw err;
+  db.users.findOne({ email: data.email }, (err, d) => {
+    if (d === null) {
+      db.users.insert(data, (err, doc) => {
+        if (err) {
+          throw err;
+        }
+        res.json(doc);
+      });
+    } else {
+      res.status(409).json({ msg: "email existente" });
     }
-
-    res.json(doc);
   });
 };
 
@@ -22,11 +27,8 @@ export const createUser = (req, res) => {
 export const login = (req, res) => {
   const { email, pass } = req.body;
 
-  console.log(email, pass);
-
   db.users.findOne({ email, pass }, (err, doc) => {
     if (err) throw err;
-    console.log(doc);
 
     res.json(doc);
   });
