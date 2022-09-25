@@ -33,21 +33,10 @@ export const editStock = (req, res) => {
 };
 
 export const getStock = (req, res) => {
-  const { user, rowsPerPage, currentPage } = req.body;
+  const { user } = req.body;
 
   db.stock.stock.find({ user, removed: false }).exec((err, docs) => {
-    db.stock.stock.count({ user, removed: false }, (err, num) => {
-      let count = 0;
-      const finalData = [];
-      for (let i = parseInt(currentPage) - 1; i < docs.length; i++) {
-        const doc = docs[i];
-        if (count < rowsPerPage) {
-          finalData.push(doc);
-        }
-        count++;
-      }
-      res.json({ docs: finalData, total: num });
-    });
+    res.json({ docs, total: docs.length });
   });
 };
 
@@ -172,5 +161,13 @@ export const getVendasPorProducto = (request, response) => {
     }
 
     response.json(result);
+  });
+};
+
+export const getFacturas = async (req, res) => {
+  const user = req.params.user;
+
+  db.stock.sell.find({ user }, (err, docs) => {
+    res.json(docs);
   });
 };

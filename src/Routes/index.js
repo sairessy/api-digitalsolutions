@@ -27,6 +27,7 @@ import {
   getSellsPerMounth,
   getQrCode,
   getVendasPorProducto,
+  getFacturas,
 } from "../Controller/stock/StockController.js";
 import {
   createMusic,
@@ -98,6 +99,7 @@ app.get("/stock/sell/total/user/:id", getTotal);
 app.get("/stock/sells_per_month/:year/:user", getSellsPerMounth);
 app.get("/qrcode/:code", getQrCode);
 app.get("/stock-vendas-por-producto/:user", getVendasPorProducto);
+app.get("/facturas/:user", getFacturas);
 
 // MusicSpot
 app.post("/music_spot/music/create", createMusic);
